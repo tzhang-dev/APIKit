@@ -51,26 +51,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="2BtJFXjembk">
-    <property role="EcuMT" value="3016777054352401108" />
-    <property role="TrG5h" value="Kit" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2BtJFXjemjG" role="1TKVEi">
-      <property role="IQ2ns" value="3016777054352401644" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="configurations" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2BtJFXjemj1" resolve="Configuration" />
-    </node>
-    <node concept="1TJgyj" id="2BtJFXjemk8" role="1TKVEi">
-      <property role="IQ2ns" value="3016777054352401672" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="20kJfa" value="commands" />
-      <ref role="20lvS9" node="2BtJFXjemjf" resolve="Command" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2BtJFXjemj1">
     <property role="EcuMT" value="3016777054352401601" />
     <property role="TrG5h" value="Configuration" />
@@ -102,13 +82,19 @@
       <property role="IQ2ns" value="3016777054352401860" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
-      <ref role="20lvS9" node="2BtJFXjemmY" resolve="RequestBody" />
+      <ref role="20lvS9" node="5T83fVaEGTv" resolve="DictionaryList" />
     </node>
     <node concept="1TJgyj" id="2BtJFXjemn6" role="1TKVEi">
       <property role="IQ2ns" value="3016777054352401862" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="params" />
-      <ref role="20lvS9" node="2BtJFXjemmZ" resolve="RequestParams" />
+      <ref role="20lvS9" node="5T83fVaEGTv" resolve="DictionaryList" />
+    </node>
+    <node concept="1TJgyj" id="4GAyovNxH19" role="1TKVEi">
+      <property role="IQ2ns" value="5415166818958889033" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="header" />
+      <ref role="20lvS9" node="5T83fVaEGTv" resolve="DictionaryList" />
     </node>
   </node>
   <node concept="1TIwiD" id="2BtJFXjemjf">
@@ -147,42 +133,6 @@
       <property role="TrG5h" value="PUT" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2BtJFXjemmY">
-    <property role="EcuMT" value="3016777054352401854" />
-    <property role="TrG5h" value="RequestBody" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2BtJFXjemnu" role="1TKVEi">
-      <property role="IQ2ns" value="3016777054352401886" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="pairs" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="2BtJFXjemno" resolve="Pair" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2BtJFXjemmZ">
-    <property role="EcuMT" value="3016777054352401855" />
-    <property role="TrG5h" value="RequestParams" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2BtJFXjemnW" role="1TKVEi">
-      <property role="IQ2ns" value="3016777054352401916" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="pairs" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="2BtJFXjemno" resolve="Pair" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2BtJFXjemn9">
-    <property role="EcuMT" value="3016777054352401865" />
-    <property role="TrG5h" value="RequestHeader" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2BtJFXjemnU" role="1TKVEi">
-      <property role="IQ2ns" value="3016777054352401914" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="pairs" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="2BtJFXjemno" resolve="Pair" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2BtJFXjemno">
     <property role="EcuMT" value="3016777054352401880" />
     <property role="TrG5h" value="Pair" />
@@ -196,6 +146,44 @@
       <property role="IQ2nx" value="3016777054352401883" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5T83fVaE4jU">
+    <property role="EcuMT" value="6793694326349645050" />
+    <property role="TrG5h" value="Definition" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5T83fVaE4jV" role="1TKVEi">
+      <property role="IQ2ns" value="6793694326349645051" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="configurations" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2BtJFXjemj1" resolve="Configuration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5T83fVaE4jX">
+    <property role="EcuMT" value="6793694326349645053" />
+    <property role="TrG5h" value="Execution" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5T83fVaE4jY" role="1TKVEi">
+      <property role="IQ2ns" value="6793694326349645054" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="commands" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2BtJFXjemjf" resolve="Command" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5T83fVaEGTv">
+    <property role="EcuMT" value="6793694326349811295" />
+    <property role="TrG5h" value="DictionaryList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2BtJFXjemnu" role="1TKVEi">
+      <property role="IQ2ns" value="3016777054352401886" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="pairs" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2BtJFXjemno" resolve="Pair" />
     </node>
   </node>
 </model>
