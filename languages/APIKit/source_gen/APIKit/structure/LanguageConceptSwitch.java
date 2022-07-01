@@ -12,16 +12,14 @@ public final class LanguageConceptSwitch {
   public static final int Command = 0;
   public static final int Configuration = 1;
   public static final int Definition = 2;
-  public static final int DictionaryList = 3;
-  public static final int Execution = 4;
-  public static final int Pair = 5;
+  public static final int Execution = 3;
+  public static final int Pair = 4;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8c215991f45d42d8L, 0x93ca8d6842f30382L);
     builder.put(0x29ddbebf533964cfL, Command);
     builder.put(0x29ddbebf533964c1L, Configuration);
     builder.put(0x5e480cfecaa844faL, Definition);
-    builder.put(0x5e480cfecaaace5fL, DictionaryList);
     builder.put(0x5e480cfecaa844fdL, Execution);
     builder.put(0x29ddbebf533965d8L, Pair);
     myIndex = builder.seal();

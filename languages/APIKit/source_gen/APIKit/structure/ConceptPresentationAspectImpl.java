@@ -12,7 +12,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Command;
   private ConceptPresentation props_Configuration;
   private ConceptPresentation props_Definition;
-  private ConceptPresentation props_DictionaryList;
   private ConceptPresentation props_Execution;
   private ConceptPresentation props_Pair;
 
@@ -42,13 +41,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Definition = cpb.create();
         }
         return props_Definition;
-      case LanguageConceptSwitch.DictionaryList:
-        if (props_DictionaryList == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("DictionaryList");
-          props_DictionaryList = cpb.create();
-        }
-        return props_DictionaryList;
       case LanguageConceptSwitch.Execution:
         if (props_Execution == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
