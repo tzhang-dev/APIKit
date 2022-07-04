@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:202581ea-6484-4ca9-9158-9315d5f77f4a(NewSolution.a_model)/2669141321569901899">
+    <file name="map_Definition.java">
+      <node id="2669141321569901899" at="14,9,15,49" concept="1" />
+      <node id="2669141321569901899" at="15,49,16,47" concept="1" />
+      <node id="2669141321569901899" at="16,47,17,34" concept="0" />
+      <node id="2669141321569901899" at="17,34,18,101" concept="1" />
+      <node id="2669141321569901899" at="18,101,19,44" concept="0" />
+      <node id="2669141321569901899" at="13,42,22,5" concept="3" />
+      <node id="2669141321569901899" at="13,0,24,0" concept="2" trace="main#([Ljava/lang/String;)V" />
+      <scope id="2669141321569901899" at="20,39,20,39" />
+      <scope id="2669141321569901899" at="21,29,21,29" />
+      <scope id="2669141321569901899" at="20,5,21,5">
+        <var name="e" id="2669141321569901899" />
+      </scope>
+      <scope id="2669141321569901899" at="21,5,22,5">
+        <var name="e" id="2669141321569901899" />
+      </scope>
+      <scope id="2669141321569901899" at="14,9,19,44">
+        <var name="con" id="2669141321569901899" />
+        <var name="reader" id="2669141321569901899" />
+        <var name="url" id="2669141321569901899" />
+      </scope>
+      <scope id="2669141321569901899" at="13,42,22,5" />
+      <scope id="2669141321569901899" at="13,0,24,0">
+        <var name="args" id="2669141321569901899" />
+      </scope>
+      <unit id="2669141321569901899" at="12,0,25,0" name="NewSolution.a_model.map_Definition" />
+    </file>
+  </root>
+</debug-info>
+

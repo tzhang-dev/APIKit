@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dd3b93b8-1048-43a5-975a-991276182c74(APIKit.sandbox)">
+<model ref="r:202581ea-6484-4ca9-9158-9315d5f77f4a(NewSolution.a_model)">
   <persistence version="9" />
   <languages>
     <use id="8c215991-f45d-42d8-93ca-8d6842f30382" name="APIKit" version="0" />
@@ -16,7 +16,6 @@
       </concept>
       <concept id="3016777054352401601" name="APIKit.structure.Configuration" flags="ng" index="1UTdDY">
         <property id="3016777054352401804" name="timeout" index="1UTdGN" />
-        <property id="3016777054352401703" name="method" index="1UTdIo" />
         <property id="3016777054352401701" name="url" index="1UTdIq" />
         <property id="3016777054352401782" name="description" index="1UTdJ9" />
       </concept>
@@ -27,25 +26,15 @@
       </concept>
     </language>
   </registry>
-  <node concept="2kS4w4" id="5T83fVaE6ji">
-    <node concept="1UTdDY" id="5T83fVaE6jj" role="2kS4w5">
-      <property role="TrG5h" value="weather" />
-      <property role="1UTdIq" value="https://www.example.com/api/wether" />
-      <property role="1UTdJ9" value="This is a test api config." />
-      <property role="1UTdGN" value="500" />
+  <node concept="2kS4w4" id="2kaGufBvpPb">
+    <node concept="1UTdDY" id="2kaGufBvpPc" role="2kS4w5">
+      <property role="TrG5h" value="sdfa" />
+      <property role="1UTdIq" value="sadfsa" />
+      <property role="1UTdJ9" value="safdsa" />
+      <property role="1UTdGN" value="1" />
     </node>
-    <node concept="1UTdDY" id="O8Yq6wESh0" role="2kS4w5">
-      <property role="TrG5h" value="coordinate" />
-      <property role="1UTdIq" value="https://www.example.com/api/coordinate" />
-      <property role="1UTdIo" value="2BtJFXjemkG/POST" />
-      <property role="1UTdJ9" value="This is another test api." />
-      <property role="1UTdGN" value="500" />
-    </node>
-    <node concept="1N8CEm" id="vdQj2XSDHG" role="1N8gJF">
-      <ref role="1N93eB" node="O8Yq6wESh0" resolve="coordinate" />
-    </node>
-    <node concept="1N8CEm" id="vdQj2XSDHI" role="1N8gJF">
-      <ref role="1N93eB" node="5T83fVaE6jj" resolve="weather" />
+    <node concept="1N8CEm" id="2kaGufBvpWo" role="1N8gJF">
+      <ref role="1N93eB" node="2kaGufBvpPc" resolve="sdfa" />
     </node>
   </node>
 </model>

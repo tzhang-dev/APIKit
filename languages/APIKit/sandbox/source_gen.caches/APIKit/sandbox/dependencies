@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <uses language="l:8c215991-f45d-42d8-93ca-8d6842f30382:APIKit" />
-  <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
-  <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
-</dependenciesRoot>
-
