@@ -125,7 +125,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ": {");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "{");
     editorCell.setCellId("Constant_4jqykr_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.MATCHING_LABEL, "brace");

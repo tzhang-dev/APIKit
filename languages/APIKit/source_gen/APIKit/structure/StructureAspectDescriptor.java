@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptCall = createDescriptorForCall();
   /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
   /*package*/ final ConceptDescriptor myConceptDefinition = createDescriptorForDefinition();
@@ -36,13 +37,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCommand, myConceptConfiguration, myConceptDefinition, myConceptExecution, myConceptPair);
+    return Arrays.asList(myConceptCall, myConceptCommand, myConceptConfiguration, myConceptDefinition, myConceptExecution, myConceptPair);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Call:
+        return myConceptCall;
       case LanguageConceptSwitch.Command:
         return myConceptCommand;
       case LanguageConceptSwitch.Configuration:
@@ -67,6 +70,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForCall() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Call", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L);
+    b.class_(false, false, false);
+    b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/379039820864820259");
+    b.version(3);
+    b.associate("config", 0x5429eb57666ad12L).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(true).origin("379039820865252626").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForCommand() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Command", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964cfL);
     b.class_(false, false, false);
@@ -99,6 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/6793694326349645050");
     b.version(3);
     b.aggregate("configurations", 0x5e480cfecaa844fbL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).ordered(true).multiple(true).origin("6793694326349645051").done();
+    b.aggregate("call", 0x5429eb57663955eL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L).optional(true).ordered(true).multiple(true).origin("379039820865049950").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExecution() {
