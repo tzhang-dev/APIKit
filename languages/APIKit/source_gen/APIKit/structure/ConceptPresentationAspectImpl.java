@@ -24,7 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Call:
         if (props_Call == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Call");
+          cpb.presentationByReference(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, 0x5429eb57666ad12L, "config", "", "");
           props_Call = cpb.create();
         }
         return props_Call;
