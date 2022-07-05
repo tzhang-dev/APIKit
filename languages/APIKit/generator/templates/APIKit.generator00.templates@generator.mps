@@ -992,6 +992,79 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="21SSgWMP72u" role="3cqZAp">
+              <node concept="3cpWsn" id="21SSgWMP72t" role="3cpWs9">
+                <property role="TrG5h" value="gson" />
+                <node concept="3uibUv" id="21SSgWMP72v" role="1tU5fm">
+                  <ref role="3uigEE" to="wy2b:~Gson" resolve="Gson" />
+                </node>
+                <node concept="2OqwBi" id="21SSgWMPpDq" role="33vP2m">
+                  <node concept="2OqwBi" id="21SSgWMPgjx" role="2Oq$k0">
+                    <node concept="2ShNRf" id="21SSgWMPbKC" role="2Oq$k0">
+                      <node concept="1pGfFk" id="21SSgWMPbKD" role="2ShVmc">
+                        <ref role="37wK5l" to="wy2b:~GsonBuilder.&lt;init&gt;()" resolve="GsonBuilder" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="21SSgWMPgjy" role="2OqNvi">
+                      <ref role="37wK5l" to="wy2b:~GsonBuilder.setPrettyPrinting()" resolve="setPrettyPrinting" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="21SSgWMPpDr" role="2OqNvi">
+                    <ref role="37wK5l" to="wy2b:~GsonBuilder.create()" resolve="create" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="21SSgWMP72$" role="3cqZAp">
+              <node concept="3cpWsn" id="21SSgWMP72z" role="3cpWs9">
+                <property role="TrG5h" value="jsonObject" />
+                <node concept="3uibUv" id="21SSgWMP72_" role="1tU5fm">
+                  <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
+                </node>
+                <node concept="2OqwBi" id="21SSgWMQo$P" role="33vP2m">
+                  <node concept="2YIFZM" id="21SSgWMPJY$" role="2Oq$k0">
+                    <ref role="37wK5l" to="wy2b:~JsonParser.parseString(java.lang.String)" resolve="parseString" />
+                    <ref role="1Pybhc" to="wy2b:~JsonParser" resolve="JsonParser" />
+                    <node concept="2OqwBi" id="21SSgWMPZhn" role="37wK5m">
+                      <node concept="2OqwBi" id="21SSgWMPRey" role="2Oq$k0">
+                        <node concept="37vLTw" id="21SSgWMPOuQ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="21SSgWMxvyx" resolve="response" />
+                        </node>
+                        <node concept="liA8E" id="21SSgWMPWnO" role="2OqNvi">
+                          <ref role="37wK5l" to="781x:~HttpResponse.body()" resolve="body" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="21SSgWMQ4y7" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.toString()" resolve="toString" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="21SSgWMQrLu" role="2OqNvi">
+                    <ref role="37wK5l" to="wy2b:~JsonElement.getAsJsonObject()" resolve="getAsJsonObject" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="21SSgWMP72F" role="3cqZAp">
+              <node concept="3cpWsn" id="21SSgWMP72E" role="3cpWs9">
+                <property role="TrG5h" value="body_str" />
+                <node concept="3uibUv" id="21SSgWMP72G" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="2OqwBi" id="21SSgWMPjyq" role="33vP2m">
+                  <node concept="37vLTw" id="21SSgWMPbKp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="21SSgWMP72t" resolve="gson" />
+                  </node>
+                  <node concept="liA8E" id="21SSgWMPjyr" role="2OqNvi">
+                    <ref role="37wK5l" to="wy2b:~Gson.toJson(com.google.gson.JsonElement)" resolve="toJson" />
+                    <node concept="37vLTw" id="21SSgWMPjys" role="37wK5m">
+                      <ref role="3cqZAo" node="21SSgWMP72z" resolve="jsonObject" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="21SSgWMP2j2" role="3cqZAp" />
             <node concept="3clFbF" id="21SSgWMIslH" role="3cqZAp">
               <node concept="2OqwBi" id="21SSgWMI$jr" role="3clFbG">
                 <node concept="10M0yZ" id="21SSgWMIxwZ" role="2Oq$k0">
@@ -1080,13 +1153,8 @@
                 </node>
                 <node concept="liA8E" id="21SSgWMAmC1" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                  <node concept="2OqwBi" id="21SSgWMAmC2" role="37wK5m">
-                    <node concept="37vLTw" id="21SSgWMAmC3" role="2Oq$k0">
-                      <ref role="3cqZAo" node="21SSgWMxvyx" resolve="response" />
-                    </node>
-                    <node concept="liA8E" id="21SSgWMAmC4" role="2OqNvi">
-                      <ref role="37wK5l" to="781x:~HttpResponse.body()" resolve="body" />
-                    </node>
+                  <node concept="37vLTw" id="21SSgWMQLbb" role="37wK5m">
+                    <ref role="3cqZAo" node="21SSgWMP72E" resolve="body_str" />
                   </node>
                 </node>
               </node>

@@ -16,6 +16,8 @@
   <dependency className="NewSolution.a_model.map_Definition">
     <classNode dependClassName="com.google.gson.Gson" />
     <classNode dependClassName="com.google.gson.GsonBuilder" />
+    <classNode dependClassName="com.google.gson.JsonObject" />
+    <classNode dependClassName="com.google.gson.JsonParser" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.InterruptedException" />

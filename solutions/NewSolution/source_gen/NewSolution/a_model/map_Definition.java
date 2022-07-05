@@ -12,6 +12,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.URI;
 import java.net.http.HttpResponse;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import java.io.IOException;
 
 public class map_Definition {
@@ -32,6 +34,19 @@ public class map_Definition {
     header.clear();
     header.put("testheader", "headervalue");
     timeout = 1000;
+    obj.getResponse(method, url, body, params, header, timeout);
+    method = "GET";
+    url = "https://npiregistry.cms.hhs.gov/api/";
+    body.clear();
+    params.clear();
+    params.put("city", "Rockville");
+    params.put("enumeration_type", "NPI-1");
+    params.put("limit", "1");
+    params.put("state", "MD");
+    params.put("first_name", "John");
+    params.put("version", "2.1");
+    header.clear();
+    timeout = 500;
     obj.getResponse(method, url, body, params, header, timeout);
   }
 
@@ -56,12 +71,16 @@ public class map_Definition {
       }
       HttpRequest req = request.build();
       HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+      Gson gson = new GsonBuilder().setPrettyPrinting().create();
+      JsonObject jsonObject = JsonParser.parseString(response.body().toString()).getAsJsonObject();
+      String body_str = gson.toJson(jsonObject);
+
       System.out.print("REQUEST URL: ");
       System.out.println(req.uri());
       System.out.print("RESPONSE STATUS: ");
       System.out.println(response.statusCode());
       System.out.println("RESPONSE BODY: ");
-      System.out.println(response.body());
+      System.out.println(body_str);
       System.out.println(" ");
     } catch (IOException e) {
     } catch (InterruptedException e) {
