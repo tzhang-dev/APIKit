@@ -63,16 +63,9 @@
         <property role="1UTdHA" value="UnixTimeStamp" />
         <property role="1UTdH$" value="1589772280" />
       </node>
-      <node concept="1UTdHB" id="21SSgWMAfVZ" role="1UTdHV">
-        <property role="1UTdHA" value="Timezone" />
-        <property role="1UTdH$" value="+3" />
-      </node>
     </node>
     <node concept="1N8CEm" id="21SSgWMI4Ee" role="1N8gJF">
       <ref role="1N93eB" node="2kaGufBvpPc" resolve="datetime" />
-    </node>
-    <node concept="1N8CEm" id="21SSgWMI4St" role="1N8gJF">
-      <ref role="1N93eB" node="21SSgWMAfSa" resolve="datetimepostjson" />
     </node>
   </node>
 </model>

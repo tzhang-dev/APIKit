@@ -33,16 +33,6 @@ public class map_Definition {
     header.put("testheader", "headervalue");
     timeout = 1000;
     obj.getResponse(method, url, body, params, header, timeout);
-    method = "POST";
-    url = "https://showcase.api.linx.twenty57.net/UnixTime/fromunixtimestamp";
-    body.clear();
-    body.put("UnixTimeStamp", "1589772280");
-    body.put("Timezone", "+3");
-    params.clear();
-    header.clear();
-    header.put("content-type", "application/json; charset=UTF-8");
-    timeout = 500;
-    obj.getResponse(method, url, body, params, header, timeout);
   }
 
   private void getResponse(String method, String url, HashMap<String, String> body, HashMap<String, String> params, HashMap<String, String> header, Integer timeout) {

@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Command;
   private ConceptPresentation props_Configuration;
   private ConceptPresentation props_Definition;
-  private ConceptPresentation props_Execution;
   private ConceptPresentation props_Pair;
 
   @Override
@@ -49,13 +48,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Definition = cpb.create();
         }
         return props_Definition;
-      case LanguageConceptSwitch.Execution:
-        if (props_Execution == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Execution");
-          props_Execution = cpb.create();
-        }
-        return props_Execution;
       case LanguageConceptSwitch.Pair:
         if (props_Pair == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
