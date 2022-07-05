@@ -4,6 +4,10 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/APIKit/APIKit.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/APIKit/sandbox/APIKit.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.kong.unirest-java-3.13.6/com.kong.unirest-java-3.13.6.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.konghq.unirest-java/com.konghq.unirest-java.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/httpcore-nio/org.apache.httpcomponents.httpcore-nio.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/unirest-java/com.konghq.unirest-java.msd" folder="" />
     </projectModules>
   </component>
 </project>

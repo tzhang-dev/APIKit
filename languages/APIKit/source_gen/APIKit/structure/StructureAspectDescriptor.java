@@ -107,6 +107,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDefinition() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Definition", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL);
     b.class_(false, false, true);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/6793694326349645050");
     b.version(3);
     b.aggregate("configurations", 0x5e480cfecaa844fbL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).ordered(true).multiple(true).origin("6793694326349645051").done();
