@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.apache.httpcomponents.httpcore-nio" uuid="747a6837-d59d-491b-886c-5bc79a5a2ff7" moduleVersion="0" compileInMPS="true">
+<solution name="org.apache.httpcomponents.httpcore-nio" uuid="747a6837-d59d-491b-886c-5bc79a5a2ff7" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/huruichen/Library/CloudStorage/OneDrive-TUEindhoven/CS/Domain Specific Language/HW/HW3/APIKit/libs/org.apache.httpcomponents.httpcore-nio" type="java_classes">
+    <modelRoot contentPath="${module}/libs" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>
@@ -14,7 +14,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="/Users/huruichen/Library/CloudStorage/OneDrive-TUEindhoven/CS/Domain Specific Language/HW/HW3/APIKit/libs/org.apache.httpcomponents.httpcore-nio/httpcore-nio-4.4.15.jar" />
+    <stubModelEntry path="${module}/libs/httpcore-nio-4.4.15.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.konghq.unirest-java" uuid="241a3574-500a-42a7-88de-ab999fb5090b" moduleVersion="0" compileInMPS="true">
+<solution name="com.konghq.unirest-java" uuid="241a3574-500a-42a7-88de-ab999fb5090b" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/huruichen/Library/CloudStorage/OneDrive-TUEindhoven/CS/Domain Specific Language/HW/HW3/APIKit/libs/com.konghq.unirest-java" type="java_classes">
+    <modelRoot contentPath="${module}/libs" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>
@@ -14,7 +14,7 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="/Users/huruichen/Library/CloudStorage/OneDrive-TUEindhoven/CS/Domain Specific Language/HW/HW3/APIKit/libs/com.konghq.unirest-java/unirest-java-3.13.6.jar" />
+    <stubModelEntry path="${module}/libs/unirest-java-3.13.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

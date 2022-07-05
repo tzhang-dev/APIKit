@@ -2,6 +2,7 @@
 <model ref="r:ad6d1305-cd19-4739-ab68-41bdcb6ae6ab(APIKit.generator00.templates@generator)">
   <persistence version="9" />
   <languages>
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -139,7 +140,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="5_S9QwSrvV2" role="3cqZAp" />
-        <node concept="3clFbH" id="5_S9QwSqUnx" role="3cqZAp" />
         <node concept="3clFbF" id="2_Tb3sTwevN" role="3cqZAp">
           <node concept="2OqwBi" id="2_Tb3sTwgn4" role="3clFbG">
             <node concept="10M0yZ" id="2_Tb3sTwewP" role="2Oq$k0">
@@ -283,7 +283,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5_S9QwSpYPB" role="3cqZAp" />
       </node>
       <node concept="3uibUv" id="71dEV9SgruC" role="Sfmx6">
         <ref role="3uigEE" to="zf81:~MalformedURLException" resolve="MalformedURLException" />
