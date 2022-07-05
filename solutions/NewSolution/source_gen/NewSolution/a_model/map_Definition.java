@@ -52,8 +52,29 @@ public class map_Definition {
     timeout = 1000;
     System.out.println("Running Configuration: " + "NIPPES");
     obj.getResponse(method, url, body, params, header, timeout);
+    method = "POST";
+    url = "https://showcase.api.linx.twenty57.net/UnixTime/fromunixtimestamp";
+    body.clear();
+    body.put("UnixTimeStamp", "1589772280");
+    params.clear();
+    header.clear();
+    header.put("content-type", "application/json; charset=UTF-8");
+    timeout = 500;
+    System.out.println("Running Configuration: " + "datetimepostjson");
+    obj.getResponse(method, url, body, params, header, timeout);
     method = "GET";
-    url = "sadfwsd";
+    url = "https://baconipsum.com/api/";
+    body.clear();
+    params.clear();
+    params.put("type", "all-meat");
+    params.put("paras", "2");
+    params.put("start-with-lorem", "1");
+    header.clear();
+    timeout = 1000;
+    System.out.println("Running Configuration: " + "text_generator");
+    obj.getResponse(method, url, body, params, header, timeout);
+    method = "GET";
+    url = "https://npiregistry.cms.hhs.gov/api/";
     body.clear();
     params.clear();
     params.put("city", "Rockville");
@@ -63,8 +84,8 @@ public class map_Definition {
     params.put("first_name", "John");
     params.put("version", "2.1");
     header.clear();
-    timeout = 1000;
-    System.out.println("Running Configuration: " + "saf");
+    timeout = 1;
+    System.out.println("Running Configuration: " + "timeout_test");
     obj.getResponse(method, url, body, params, header, timeout);
   }
 
