@@ -67,7 +67,7 @@
     <node concept="1UTdDY" id="21SSgWMR7Cn" role="2kS4w5">
       <property role="1UTdIq" value="https://npiregistry.cms.hhs.gov/api/" />
       <property role="TrG5h" value="NIPPES" />
-      <property role="1UTdGN" value="500" />
+      <property role="1UTdGN" value="1000" />
       <property role="1UTdJ9" value="National Plan &amp; Provider Enumeration System, info on healthcare providers registered in US" />
       <node concept="1UTdHB" id="21SSgWMR7I9" role="1UTdHT">
         <property role="1UTdHA" value="city" />

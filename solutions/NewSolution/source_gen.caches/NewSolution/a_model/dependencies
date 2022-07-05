@@ -19,6 +19,9 @@
     <classNode dependClassName="com.google.gson.JsonObject" />
     <classNode dependClassName="com.google.gson.JsonParser" />
     <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.IllegalArgumentException" />
+    <classNode dependClassName="java.lang.IllegalStateException" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="java.lang.String" />
@@ -26,8 +29,10 @@
     <classNode dependClassName="java.net.URI" />
     <classNode dependClassName="java.net.URLEncoder" />
     <classNode dependClassName="java.net.http.HttpClient" />
+    <classNode dependClassName="java.net.http.HttpConnectTimeoutException" />
     <classNode dependClassName="java.net.http.HttpRequest" />
     <classNode dependClassName="java.net.http.HttpResponse" />
+    <classNode dependClassName="java.time.Duration" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.List" />

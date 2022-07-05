@@ -11,9 +11,11 @@ import com.google.gson.GsonBuilder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.URI;
+import java.time.Duration;
 import java.net.http.HttpResponse;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import java.net.http.HttpConnectTimeoutException;
 import java.io.IOException;
 
 public class map_Definition {
@@ -34,6 +36,7 @@ public class map_Definition {
     header.clear();
     header.put("testheader", "headervalue");
     timeout = 1000;
+    System.out.println("Running Configuration: " + "datetime");
     obj.getResponse(method, url, body, params, header, timeout);
     method = "GET";
     url = "https://npiregistry.cms.hhs.gov/api/";
@@ -46,7 +49,22 @@ public class map_Definition {
     params.put("first_name", "John");
     params.put("version", "2.1");
     header.clear();
-    timeout = 500;
+    timeout = 1000;
+    System.out.println("Running Configuration: " + "NIPPES");
+    obj.getResponse(method, url, body, params, header, timeout);
+    method = "GET";
+    url = "sadfwsd";
+    body.clear();
+    params.clear();
+    params.put("city", "Rockville");
+    params.put("enumeration_type", "NPI-1");
+    params.put("limit", "1");
+    params.put("state", "MD");
+    params.put("first_name", "John");
+    params.put("version", "2.1");
+    header.clear();
+    timeout = 1000;
+    System.out.println("Running Configuration: " + "saf");
     obj.getResponse(method, url, body, params, header, timeout);
   }
 
@@ -66,24 +84,39 @@ public class map_Definition {
       HttpClient client = HttpClient.newHttpClient();
       HttpRequest.Builder request = HttpRequest.newBuilder().uri(URI.create(url));
       request.method(method, HttpRequest.BodyPublishers.ofString(boddy));
+      request.timeout(Duration.ofMillis(timeout));
       for (String key : header.keySet()) {
         request.header(key, header.get(key));
       }
       HttpRequest req = request.build();
-      HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
-      Gson gson = new GsonBuilder().setPrettyPrinting().create();
-      JsonObject jsonObject = JsonParser.parseString(response.body().toString()).getAsJsonObject();
-      String body_str = gson.toJson(jsonObject);
-
       System.out.print("REQUEST URL: ");
       System.out.println(req.uri());
+      HttpResponse<String> response = client.send(req, HttpResponse.BodyHandlers.ofString());
+      String body_str;
+      try {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        JsonObject jsonObject = JsonParser.parseString(response.body().toString()).getAsJsonObject();
+        body_str = gson.toJson(jsonObject);
+      } catch (IllegalStateException e) {
+        body_str = response.body().toString();
+      } catch (Exception e) {
+        body_str = response.body().toString();
+      }
       System.out.print("RESPONSE STATUS: ");
       System.out.println(response.statusCode());
       System.out.println("RESPONSE BODY: ");
       System.out.println(body_str);
-      System.out.println(" ");
+    } catch (HttpConnectTimeoutException e) {
+      System.out.println("REQUEST FAILED: TIMEOUT");
+    } catch (IllegalArgumentException e) {
+      System.out.print("BUILD REQUEST FAILED: ");
+      System.out.print(e.getMessage());
     } catch (IOException e) {
+      System.out.println(e.toString());
     } catch (InterruptedException e) {
+      System.out.println(e.toString());
+    } finally {
+      System.out.println(" ");
     }
   }
 }
