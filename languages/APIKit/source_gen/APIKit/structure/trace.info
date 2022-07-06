@@ -105,55 +105,46 @@
       <node id="3016777054352401706" at="14,41,15,163" concept="9" />
       <node id="3016777054352401707" at="18,0,19,0" concept="2" trace="myMember_GET_0" />
       <node id="3016777054352401708" at="19,0,20,0" concept="2" trace="myMember_POST_0" />
-      <node id="3016777054352401711" at="20,0,21,0" concept="2" trace="myMember_PATCH_0" />
-      <node id="3016777054352401715" at="21,0,22,0" concept="2" trace="myMember_DELETE_0" />
-      <node id="3016777054352401746" at="22,0,23,0" concept="2" trace="myMember_PUT_0" />
-      <node id="3016777054352401706" at="24,0,25,0" concept="2" trace="myIndex" />
-      <node id="3016777054352401706" at="25,0,26,0" concept="2" trace="myMembers" />
-      <node id="3016777054352401706" at="29,62,30,26" concept="6" />
-      <node id="3016777054352401706" at="35,68,36,21" concept="6" />
-      <node id="3016777054352401706" at="42,29,43,18" concept="6" />
-      <node id="3016777054352401707" at="46,17,47,30" concept="6" />
-      <node id="3016777054352401708" at="48,18,49,31" concept="6" />
-      <node id="3016777054352401711" at="50,19,51,32" concept="6" />
-      <node id="3016777054352401715" at="52,20,53,33" concept="6" />
-      <node id="3016777054352401746" at="54,17,55,30" concept="6" />
-      <node id="3016777054352401706" at="56,5,57,16" concept="6" />
-      <node id="3016777054352401706" at="62,73,63,39" concept="5" />
-      <node id="3016777054352401706" at="64,22,65,18" concept="6" />
-      <node id="3016777054352401706" at="66,5,67,32" concept="6" />
+      <node id="3016777054352401706" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="3016777054352401706" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="3016777054352401706" at="26,62,27,26" concept="6" />
+      <node id="3016777054352401706" at="32,68,33,21" concept="6" />
+      <node id="3016777054352401706" at="39,29,40,18" concept="6" />
+      <node id="3016777054352401707" at="43,17,44,30" concept="6" />
+      <node id="3016777054352401708" at="45,18,46,31" concept="6" />
+      <node id="3016777054352401706" at="47,5,48,16" concept="6" />
+      <node id="3016777054352401706" at="53,73,54,39" concept="5" />
+      <node id="3016777054352401706" at="55,22,56,18" concept="6" />
+      <node id="3016777054352401706" at="57,5,58,32" concept="6" />
       <node id="3016777054352401706" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_Method#()V" />
-      <node id="3016777054352401706" at="41,88,44,5" concept="3" />
-      <node id="3016777054352401706" at="63,39,66,5" concept="3" />
-      <node id="3016777054352401706" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="3016777054352401706" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/List;" />
-      <node id="3016777054352401706" at="60,0,69,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="3016777054352401706" at="44,5,56,5" concept="10" />
-      <node id="3016777054352401706" at="39,0,59,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="3016777054352401706" at="38,88,41,5" concept="3" />
+      <node id="3016777054352401706" at="54,39,57,5" concept="3" />
+      <node id="3016777054352401706" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="3016777054352401706" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="3016777054352401706" at="41,5,47,5" concept="10" />
+      <node id="3016777054352401706" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="3016777054352401706" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
       <scope id="3016777054352401706" at="14,41,15,163" />
-      <scope id="3016777054352401706" at="29,62,30,26" />
-      <scope id="3016777054352401706" at="35,68,36,21" />
-      <scope id="3016777054352401706" at="42,29,43,18" />
-      <scope id="3016777054352401707" at="46,17,47,30" />
-      <scope id="3016777054352401708" at="48,18,49,31" />
-      <scope id="3016777054352401711" at="50,19,51,32" />
-      <scope id="3016777054352401715" at="52,20,53,33" />
-      <scope id="3016777054352401746" at="54,17,55,30" />
-      <scope id="3016777054352401706" at="64,22,65,18" />
+      <scope id="3016777054352401706" at="26,62,27,26" />
+      <scope id="3016777054352401706" at="32,68,33,21" />
+      <scope id="3016777054352401706" at="39,29,40,18" />
+      <scope id="3016777054352401707" at="43,17,44,30" />
+      <scope id="3016777054352401708" at="45,18,46,31" />
+      <scope id="3016777054352401706" at="55,22,56,18" />
       <scope id="3016777054352401706" at="14,0,17,0" />
-      <scope id="3016777054352401706" at="27,0,32,0" />
-      <scope id="3016777054352401706" at="33,0,38,0" />
-      <scope id="3016777054352401706" at="62,73,67,32">
+      <scope id="3016777054352401706" at="24,0,29,0" />
+      <scope id="3016777054352401706" at="30,0,35,0" />
+      <scope id="3016777054352401706" at="53,73,58,32">
         <var name="index" id="3016777054352401706" />
       </scope>
-      <scope id="3016777054352401706" at="60,0,69,0">
+      <scope id="3016777054352401706" at="51,0,60,0">
         <var name="idValue" id="3016777054352401706" />
       </scope>
-      <scope id="3016777054352401706" at="41,88,57,16" />
-      <scope id="3016777054352401706" at="39,0,59,0">
+      <scope id="3016777054352401706" at="38,88,48,16" />
+      <scope id="3016777054352401706" at="36,0,50,0">
         <var name="memberName" id="3016777054352401706" />
       </scope>
-      <unit id="3016777054352401706" at="12,0,70,0" name="APIKit.structure.EnumerationDescriptor_Method" />
+      <unit id="3016777054352401706" at="12,0,61,0" name="APIKit.structure.EnumerationDescriptor_Method" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3016777054352401706" at="24,0,25,0" concept="2" trace="myEnumerationMethod" />

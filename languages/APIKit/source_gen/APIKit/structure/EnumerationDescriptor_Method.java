@@ -17,12 +17,9 @@ public class EnumerationDescriptor_Method extends EnumerationDescriptorBase {
 
   private final EnumerationDescriptor.MemberDescriptor myMember_GET_0 = new EnumerationDescriptor.MemberDescriptor("GET", "GET", 0x29ddbebf5339652bL, "r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401707");
   private final EnumerationDescriptor.MemberDescriptor myMember_POST_0 = new EnumerationDescriptor.MemberDescriptor("POST", "POST", 0x29ddbebf5339652cL, "r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401708");
-  private final EnumerationDescriptor.MemberDescriptor myMember_PATCH_0 = new EnumerationDescriptor.MemberDescriptor("PATCH", "PATCH", 0x29ddbebf5339652fL, "r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401711");
-  private final EnumerationDescriptor.MemberDescriptor myMember_DELETE_0 = new EnumerationDescriptor.MemberDescriptor("DELETE", "DELETE", 0x29ddbebf53396533L, "r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401715");
-  private final EnumerationDescriptor.MemberDescriptor myMember_PUT_0 = new EnumerationDescriptor.MemberDescriptor("PUT", "PUT", 0x29ddbebf53396552L, "r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401746");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf5339652aL, 0x29ddbebf5339652bL, 0x29ddbebf5339652cL, 0x29ddbebf5339652fL, 0x29ddbebf53396533L, 0x29ddbebf53396552L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_GET_0, myMember_POST_0, myMember_PATCH_0, myMember_DELETE_0, myMember_PUT_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf5339652aL, 0x29ddbebf5339652bL, 0x29ddbebf5339652cL);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_GET_0, myMember_POST_0);
 
   @Nullable
   @Override
@@ -47,12 +44,6 @@ public class EnumerationDescriptor_Method extends EnumerationDescriptorBase {
         return myMember_GET_0;
       case "POST":
         return myMember_POST_0;
-      case "PATCH":
-        return myMember_PATCH_0;
-      case "DELETE":
-        return myMember_DELETE_0;
-      case "PUT":
-        return myMember_PUT_0;
     }
     return null;
   }
