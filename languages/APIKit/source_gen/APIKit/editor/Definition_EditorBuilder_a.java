@@ -272,17 +272,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new callListHandler_7940ks_b1b0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new execListHandler_7940ks_b1b0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_call");
+    editorCell.setCellId("refNodeList_exec");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class callListHandler_7940ks_b1b0 extends RefNodeListHandler {
+  private static class execListHandler_7940ks_b1b0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public callListHandler_7940ks_b1b0(SNode ownerNode, EditorContext context) {
+    public execListHandler_7940ks_b1b0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -292,7 +292,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.call$WhtI;
+      return LINKS.exec$WhtI;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.Execution$Yp;
@@ -305,7 +305,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(callListHandler_7940ks_b1b0.this.getNode(), LINKS.call$WhtI));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(execListHandler_7940ks_b1b0.this.getNode(), LINKS.exec$WhtI));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -359,7 +359,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink configurations$_2JT = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL, 0x5e480cfecaa844fbL, "configurations");
-    /*package*/ static final SContainmentLink call$WhtI = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL, 0x5429eb57663955eL, "call");
+    /*package*/ static final SContainmentLink exec$WhtI = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL, 0x5429eb57663955eL, "exec");
   }
 
   private static final class CONCEPTS {

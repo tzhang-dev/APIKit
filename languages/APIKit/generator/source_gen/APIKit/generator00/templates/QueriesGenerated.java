@@ -69,7 +69,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.config$bBZ$), LINKS.header$I5By);
   }
   public static Iterable<SNode> sourceNodesQuery_1_3(final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getChildren(_context.getNode(), LINKS.call$WhtI);
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.exec$WhtI);
   }
   private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
   {
@@ -166,7 +166,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink body$rDKj = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L, 0x29ddbebf533965c4L, "body");
     /*package*/ static final SContainmentLink params$rEel = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L, 0x29ddbebf533965c6L, "params");
     /*package*/ static final SContainmentLink header$I5By = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L, 0x4b268987f386d049L, "header");
-    /*package*/ static final SContainmentLink call$WhtI = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL, 0x5429eb57663955eL, "call");
+    /*package*/ static final SContainmentLink exec$WhtI = MetaAdapterFactory.getContainmentLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5e480cfecaa844faL, 0x5429eb57663955eL, "exec");
   }
 
   private static final class PROPS {

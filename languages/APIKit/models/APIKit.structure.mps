@@ -178,7 +178,7 @@
     <node concept="1TJgyj" id="l2BFlQoTlu" role="1TKVEi">
       <property role="IQ2ns" value="379039820865049950" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="call" />
+      <property role="20kJfa" value="exec" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="l2BFlQo1gz" resolve="Execution" />
     </node>

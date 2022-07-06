@@ -265,7 +265,7 @@
           <property role="3F0ifm" value="Execution" />
         </node>
         <node concept="3F2HdR" id="l2BFlQp$it" role="b$wch">
-          <ref role="1NtTu8" to="cw1r:l2BFlQoTlu" resolve="call" />
+          <ref role="1NtTu8" to="cw1r:l2BFlQoTlu" resolve="exec" />
           <node concept="2iRkQZ" id="l2BFlQp$iu" role="2czzBx" />
         </node>
       </node>

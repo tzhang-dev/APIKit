@@ -86,7 +86,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/6793694326349645050");
     b.version(3);
     b.aggregate("configurations", 0x5e480cfecaa844fbL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).ordered(true).multiple(true).origin("6793694326349645051").done();
-    b.aggregate("call", 0x5429eb57663955eL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L).optional(true).ordered(true).multiple(true).origin("379039820865049950").done();
+    b.aggregate("exec", 0x5429eb57663955eL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L).optional(true).ordered(true).multiple(true).origin("379039820865049950").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExecution() {
