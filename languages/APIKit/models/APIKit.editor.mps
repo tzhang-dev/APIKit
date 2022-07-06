@@ -292,7 +292,7 @@
       <property role="TrG5h" value="shallowGrey" />
       <node concept="VechU" id="4QICRNNHok7" role="3F10Kt">
         <node concept="1iSF2X" id="4QICRNNHoka" role="VblUZ">
-          <property role="1iTho6" value="7e7e7e" />
+          <property role="1iTho6" value="f5a34e" />
         </node>
       </node>
     </node>
