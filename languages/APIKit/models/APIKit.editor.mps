@@ -261,9 +261,8 @@
         </node>
       </node>
       <node concept="b$f91" id="l2BFlQoTnn" role="3EZMnx">
-        <node concept="3F0ifn" id="l2BFlQoTnr" role="b$u42">
-          <property role="3F0ifm" value="Call" />
-          <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+        <node concept="3F0ifn" id="1m5D3uPEsY1" role="b$u42">
+          <property role="3F0ifm" value="Execution" />
         </node>
         <node concept="3F2HdR" id="l2BFlQp$it" role="b$wch">
           <ref role="1NtTu8" to="cw1r:l2BFlQoTlu" resolve="call" />
@@ -299,7 +298,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="l2BFlQo1h7">
-    <ref role="1XX52x" to="cw1r:l2BFlQo1gz" resolve="Call" />
+    <ref role="1XX52x" to="cw1r:l2BFlQo1gz" resolve="Execution" />
     <node concept="3EZMnI" id="l2BFlQptp8" role="2wV5jI">
       <node concept="2iRkQZ" id="l2BFlQptpb" role="2iSdaV" />
       <node concept="1iCGBv" id="l2BFlQpEOI" role="3EZMnx">

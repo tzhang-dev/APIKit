@@ -9,10 +9,9 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Call;
-  private ConceptPresentation props_Command;
   private ConceptPresentation props_Configuration;
   private ConceptPresentation props_Definition;
+  private ConceptPresentation props_Execution;
   private ConceptPresentation props_Pair;
 
   @Override
@@ -20,20 +19,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Call:
-        if (props_Call == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, 0x5429eb57666ad12L, "config", "", "");
-          props_Call = cpb.create();
-        }
-        return props_Call;
-      case LanguageConceptSwitch.Command:
-        if (props_Command == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964cfL, 0x29ddbebf533965feL, "configuration", "", "");
-          props_Command = cpb.create();
-        }
-        return props_Command;
       case LanguageConceptSwitch.Configuration:
         if (props_Configuration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -48,6 +33,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Definition = cpb.create();
         }
         return props_Definition;
+      case LanguageConceptSwitch.Execution:
+        if (props_Execution == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, 0x5429eb57666ad12L, "config", "", "");
+          props_Execution = cpb.create();
+        }
+        return props_Execution;
       case LanguageConceptSwitch.Pair:
         if (props_Pair == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

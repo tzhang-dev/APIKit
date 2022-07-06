@@ -241,11 +241,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return BlockCells.useBraces();
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Call");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Execution");
     editorCell.setCellId("Constant_7940ks_a0b0");
-    Style style = new StyleImpl();
-    new KeywordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
-    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -298,7 +295,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.call$WhtI;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Call$Yp;
+      return CONCEPTS.Execution$Yp;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -367,6 +364,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Configuration$Wy = MetaAdapterFactory.getConcept(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L, "APIKit.structure.Configuration");
-    /*package*/ static final SConcept Call$Yp = MetaAdapterFactory.getConcept(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, "APIKit.structure.Call");
+    /*package*/ static final SConcept Execution$Yp = MetaAdapterFactory.getConcept(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, "APIKit.structure.Execution");
   }
 }

@@ -180,7 +180,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="call" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="l2BFlQo1gz" resolve="Call" />
+      <ref role="20lvS9" node="l2BFlQo1gz" resolve="Execution" />
     </node>
     <node concept="PrWs8" id="2kaGufBvsge" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
@@ -188,7 +188,7 @@
   </node>
   <node concept="1TIwiD" id="l2BFlQo1gz">
     <property role="EcuMT" value="379039820864820259" />
-    <property role="TrG5h" value="Call" />
+    <property role="TrG5h" value="Execution" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="l2BFlQpEOi" role="1TKVEi">
       <property role="IQ2ns" value="379039820865252626" />

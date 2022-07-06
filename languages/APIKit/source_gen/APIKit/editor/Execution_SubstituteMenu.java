@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class Command_SubstituteMenu extends SubstituteMenuBase {
+public class Execution_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_2t0axy_a(), CONCEPTS.Command$dv));
-    result.add(new SMP_Subconcepts_2t0axy_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_6oc2pc_a(), CONCEPTS.Execution$Yp));
+    result.add(new SMP_Subconcepts_6oc2pc_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class Command_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Command. Generated from implicit smart reference attribute.", new SNodePointer("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)", "3016777054352401615")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Execution. Generated from implicit smart reference attribute.", new SNodePointer("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)", "379039820864820259")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class Command_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_2t0axy_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_6oc2pc_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_2t0axy_a() {
+    public SMP_ReferenceScope_6oc2pc_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.Command$dv, LINKS.configuration$uCZY);
+      super((SAbstractConcept) CONCEPTS.Execution$Yp, LINKS.config$bBZ$);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class Command_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_2t0axy_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_6oc2pc_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Command$dv);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Execution$Yp);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Command", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Execution", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,10 +88,10 @@ public class Command_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Command$dv = MetaAdapterFactory.getConcept(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964cfL, "APIKit.structure.Command");
+    /*package*/ static final SConcept Execution$Yp = MetaAdapterFactory.getConcept(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, "APIKit.structure.Execution");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink configuration$uCZY = MetaAdapterFactory.getReferenceLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964cfL, 0x29ddbebf533965feL, "configuration");
+    /*package*/ static final SReferenceLink config$bBZ$ = MetaAdapterFactory.getReferenceLink(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L, 0x5429eb57666ad12L, "config");
   }
 }

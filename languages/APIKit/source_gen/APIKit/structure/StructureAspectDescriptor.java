@@ -16,10 +16,9 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptCall = createDescriptorForCall();
-  /*package*/ final ConceptDescriptor myConceptCommand = createDescriptorForCommand();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
   /*package*/ final ConceptDescriptor myConceptDefinition = createDescriptorForDefinition();
+  /*package*/ final ConceptDescriptor myConceptExecution = createDescriptorForExecution();
   /*package*/ final ConceptDescriptor myConceptPair = createDescriptorForPair();
   /*package*/ final EnumerationDescriptor myEnumerationMethod = new EnumerationDescriptor_Method();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -36,21 +35,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCall, myConceptCommand, myConceptConfiguration, myConceptDefinition, myConceptPair);
+    return Arrays.asList(myConceptConfiguration, myConceptDefinition, myConceptExecution, myConceptPair);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Call:
-        return myConceptCall;
-      case LanguageConceptSwitch.Command:
-        return myConceptCommand;
       case LanguageConceptSwitch.Configuration:
         return myConceptConfiguration;
       case LanguageConceptSwitch.Definition:
         return myConceptDefinition;
+      case LanguageConceptSwitch.Execution:
+        return myConceptExecution;
       case LanguageConceptSwitch.Pair:
         return myConceptPair;
       default:
@@ -67,25 +64,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForCall() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Call", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L);
-    b.class_(false, false, false);
-    b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/379039820864820259");
-    b.version(3);
-    b.associate("config", 0x5429eb57666ad12L).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).origin("379039820865252626").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForCommand() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Command", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964cfL);
-    b.class_(false, false, false);
-    b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/3016777054352401615");
-    b.version(3);
-    b.associate("configuration", 0x29ddbebf533965feL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).origin("3016777054352401918").done();
-    b.aggregate("header", 0x4daea37cf3a8e2b0L).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533965d8L).optional(true).ordered(true).multiple(true).origin("5597591143927308976").done();
-    b.aggregate("params", 0x4daea37cf3a8e2b7L).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533965d8L).optional(true).ordered(true).multiple(true).origin("5597591143927308983").done();
-    b.aggregate("body", 0x4daea37cf3afd06eL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533965d8L).optional(true).ordered(true).multiple(true).origin("5597591143927763054").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForConfiguration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Configuration", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L);
     b.class_(false, false, false);
@@ -109,6 +87,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("configurations", 0x5e480cfecaa844fbL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).ordered(true).multiple(true).origin("6793694326349645051").done();
     b.aggregate("call", 0x5429eb57663955eL).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L).optional(true).ordered(true).multiple(true).origin("379039820865049950").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExecution() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APIKit", "Execution", 0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x5429eb576601423L);
+    b.class_(false, false, false);
+    b.origin("r:e4e3c505-3268-45a2-a6ec-5d9ec2c1d506(APIKit.structure)/379039820864820259");
+    b.version(3);
+    b.associate("config", 0x5429eb57666ad12L).target(0x8c215991f45d42d8L, 0x93ca8d6842f30382L, 0x29ddbebf533964c1L).optional(false).origin("379039820865252626").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPair() {
