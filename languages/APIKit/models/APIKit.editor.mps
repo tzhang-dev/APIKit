@@ -256,7 +256,7 @@
           <node concept="2iRkQZ" id="l2BFlQoTnl" role="2czzBx" />
         </node>
         <node concept="3F0ifn" id="l2BFlQoTnm" role="b$u42">
-          <property role="3F0ifm" value="Definition" />
+          <property role="3F0ifm" value="Configuration" />
           <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
         </node>
       </node>
