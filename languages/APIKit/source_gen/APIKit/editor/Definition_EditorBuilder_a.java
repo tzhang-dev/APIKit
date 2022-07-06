@@ -91,7 +91,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return BlockCells.useBraces();
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Definition");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Configuration");
     editorCell.setCellId("Constant_7940ks_a0a0");
     Style style = new StyleImpl();
     new KeywordStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
