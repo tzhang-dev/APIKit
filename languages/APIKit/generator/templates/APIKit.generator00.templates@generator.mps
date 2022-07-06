@@ -1369,8 +1369,30 @@
               </node>
             </node>
           </node>
-          <node concept="3uVAMA" id="21SSgWMxvyK" role="1zxBo5">
-            <node concept="3clFbS" id="21SSgWMxvyL" role="1zc67A">
+          <node concept="3uVAMA" id="BPFa6e0M4l" role="1zxBo5">
+            <node concept="XOnhg" id="BPFa6e0M4m" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="BPFa6e0M4n" role="1tU5fm">
+                <node concept="3uibUv" id="BPFa6e0RY5" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="BPFa6e0M4o" role="1zc67A">
+              <node concept="3clFbF" id="BPFa6e1n7r" role="3cqZAp">
+                <node concept="2OqwBi" id="BPFa6e1n7s" role="3clFbG">
+                  <node concept="10M0yZ" id="BPFa6e1n7t" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="BPFa6e1n7u" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
+                    <node concept="Xl_RD" id="BPFa6e1n7v" role="37wK5m">
+                      <property role="Xl_RC" value="FATAL ERROR: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="21SSgWMZ8fk" role="3cqZAp">
                 <node concept="2OqwBi" id="21SSgWMZgX3" role="3clFbG">
                   <node concept="10M0yZ" id="21SSgWMZcFD" role="2Oq$k0">
@@ -1381,52 +1403,13 @@
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                     <node concept="2OqwBi" id="21SSgWMZGwY" role="37wK5m">
                       <node concept="37vLTw" id="21SSgWMZCJr" role="2Oq$k0">
-                        <ref role="3cqZAo" node="21SSgWMxvyM" resolve="e" />
+                        <ref role="3cqZAo" node="BPFa6e0M4m" resolve="e" />
                       </node>
-                      <node concept="liA8E" id="21SSgWMZLuF" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.toString()" resolve="toString" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="XOnhg" id="21SSgWMxvyM" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="21SSgWMxvyN" role="1tU5fm">
-                <node concept="3uibUv" id="21SSgWMxvyO" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="21SSgWMxvyP" role="1zxBo5">
-            <node concept="3clFbS" id="21SSgWMxvyQ" role="1zc67A">
-              <node concept="3clFbF" id="21SSgWMZSS1" role="3cqZAp">
-                <node concept="2OqwBi" id="21SSgWMZSS2" role="3clFbG">
-                  <node concept="10M0yZ" id="21SSgWMZSS3" role="2Oq$k0">
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  </node>
-                  <node concept="liA8E" id="21SSgWMZSS4" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                    <node concept="2OqwBi" id="21SSgWN4zfy" role="37wK5m">
-                      <node concept="37vLTw" id="21SSgWN4r$N" role="2Oq$k0">
-                        <ref role="3cqZAo" node="21SSgWMxvyR" resolve="e" />
-                      </node>
-                      <node concept="liA8E" id="21SSgWN4A0H" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.toString()" resolve="toString" />
+                      <node concept="liA8E" id="BPFa6e1LAi" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                       </node>
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="XOnhg" id="21SSgWMxvyR" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="21SSgWMxvyS" role="1tU5fm">
-                <node concept="3uibUv" id="21SSgWMxvyT" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
                 </node>
               </node>
             </node>
