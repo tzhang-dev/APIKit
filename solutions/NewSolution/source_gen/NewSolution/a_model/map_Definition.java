@@ -16,7 +16,6 @@ import java.net.http.HttpResponse;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.net.http.HttpConnectTimeoutException;
-import java.io.IOException;
 
 public class map_Definition {
   public static void main(String[] args) {
@@ -132,10 +131,9 @@ public class map_Definition {
     } catch (IllegalArgumentException e) {
       System.out.print("BUILD REQUEST FAILED: ");
       System.out.print(e.getMessage());
-    } catch (IOException e) {
-      System.out.println(e.toString());
-    } catch (InterruptedException e) {
-      System.out.println(e.toString());
+    } catch (Exception e) {
+      System.out.print("FATAL ERROR: ");
+      System.out.println(e.getMessage());
     } finally {
       System.out.println(" ");
     }

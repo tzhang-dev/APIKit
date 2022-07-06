@@ -18,12 +18,10 @@
     <classNode dependClassName="com.google.gson.GsonBuilder" />
     <classNode dependClassName="com.google.gson.JsonObject" />
     <classNode dependClassName="com.google.gson.JsonParser" />
-    <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.IllegalArgumentException" />
     <classNode dependClassName="java.lang.IllegalStateException" />
     <classNode dependClassName="java.lang.Integer" />
-    <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.net.URI" />
